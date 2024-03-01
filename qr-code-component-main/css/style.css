@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set basic styles form style-guide.md */
+body {
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    color: hsl(218, 44%, 22%);
+    font-size: 1.3em;
+}
+
+p {
+    color: hsl(220, 15%, 55%);
+    font-size: 1.1em;
+}
+
+h1, p {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+}
+
+.component {
+    /* height: 80%; */
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* Desktop first */
+body {
+    max-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* flex-basis: 80%; */
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    padding: 5%;
+    border-radius: 5%;
+}
+
+article {
+    width: 90%;
+}
+
+.image {
+    width: 100%;
+}
+
+.image, h1 {
+    margin-bottom: 5%;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 9%;
+}
+
+.attribution {
+    margin-top: 5%;
+}
+
+/* Mobile could've been better tbh */
+@media only screen and (orientation: landscape) and (max-width:900px){
+    body {
+        max-height: 100vh;
+        padding: 10% 0;
+    }
+
+
+    .wrapper {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .component {
+        flex-basis: 80vh;
+        justify-content: space-between;
+    }
+
+    .attribution {
+        margin-left: 5%;
+    }
+
+}
