@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+html {
+    --borderBottomColor: hsl(30, 18%, 87%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set the colors, font-size, font etc. */
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-size: 15px;
+}
+
+.wrap {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+}
+
+h2, table span{
+    color: hsl(14, 45%, 36%);
+}
+
+span {
+    color: hsl(30, 10%, 34%);
+    font-weight: bold;
+}
+
+p, ul, ol, td {
+    color: hsl(30, 10%, 34%);
+}
+
+h1, h2 {
+    font-family: "Young Serif", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul, ol, p, h3, td {
+    font-family: "Outfit", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.prep-time li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+/* attribution */
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+/* desktop */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 108vh;
+}
+
+.wrap {
+    width: calc(100vw / 3);
+    flex-grow: 1;
+    margin: 4vh 0;
+    border-radius: 2%;
+    padding: 2%;
+}
+
+.image, img, header, main {
+    width: 100%;
+}
+
+img, .prep-time {
+    border-radius: 2%;
+}
+
+header {
+    height: 20%;
+}
+
+main {
+    height: 80%;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    width: 100%;
+}
+td {
+    width: 50%;
+    border-collapse: collapse;
+    padding-left: 5%;
+}
+
+/* set paddings for all sections + top/bottom margins for li */
+.prep-time {
+    padding: 3%;
+}
+
+.prep-time ul {
+    padding-left: 4%;
+}
+
+li {
+    padding-left: 2%;
+    margin-top: 1%;
+}
+
+ul, ol {
+    padding-left: 4%;
+}
+
+ul, ol, p, h2, h1, section {
+    margin-top: calc(4% - 1px);
+    margin-bottom: calc(4% - 1px);
+}
+
+/* fancy border-bottom  + table*/
+.ingredients, .manual, td {
+    border-bottom: 1px solid var(--borderBottomColor);
+}
+
+/* td:nth-child(1) {
+    border-right: 1px solid var(--borderBottomColor);
+}
+
+td:nth-child(2){
+    border-left: 1px solid var(--borderBottomColor);
+} */
+
+/* Mobile TO:DO */
+@media (orientation: portrait) and (max-width: 920px){
+    .wrap {
+        width: 100vh;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
