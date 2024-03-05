@@ -54,6 +54,7 @@ body {
 .wrap {
     height: 100vh;
     width: 100vw;
+    
 }
 
 .upper-bgc, .lower-bgc {
@@ -78,10 +79,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 30vw;
-    /* height: 60%; */
+    width: 40vw;
+    /* max-height: 100vh; */
 
     padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 
     border-radius: 2%;
 
