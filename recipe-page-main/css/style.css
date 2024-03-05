@@ -193,7 +193,7 @@ ul, ol, p, h2, h1, section {
 }
 
 /* TABLET */
-@media (min-width: 701px) and (max-width: 1024px){
+@media (min-width: 701px){
 
     body {
         font-size: 17px;
@@ -202,6 +202,11 @@ ul, ol, p, h2, h1, section {
     .wrap {
         width: 60vw;
     }
+
+    .prep-time ul, ul, ol {
+        padding-left: 5%;
+    }
+
 }
 
 
